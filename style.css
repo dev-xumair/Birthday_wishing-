@@ -467,3 +467,120 @@ body { position: relative; }
   .duration { display: none; }
   .cake { transform: scale(.7); margin: -10px 0 -20px; }
 }
+
+
+/* ===============================
+   VIP MICRO INTERACTIONS UPGRADE
+=================================*/
+
+/* smooth global feel upgrade */
+* {
+  transition-timing-function: cubic-bezier(.2,.8,.2,1);
+}
+
+/* BUTTON PREMIUM FEEL */
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+/* shimmer sweep */
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.25),
+    transparent
+  );
+  transition: 0.6s;
+}
+
+.btn:hover::before {
+  left: 120%;
+}
+
+/* click press effect */
+.btn:active {
+  transform: scale(0.94);
+}
+
+/* YES BUTTON UPGRADE */
+.btn.yes:hover {
+  transform: scale(1.08) translateY(-2px);
+  box-shadow: 0 0 55px rgba(236,72,153,.45);
+}
+
+/* NO BUTTON panic feel */
+.btn.no:hover {
+  background: rgba(255,255,255,.12);
+  box-shadow: 0 0 20px rgba(255,255,255,.08);
+}
+
+/* SCENE ENTRY CINEMATIC POP */
+.scene.active {
+  animation: scenePop 1s ease forwards;
+}
+
+@keyframes scenePop {
+  0% {
+    opacity: 0;
+    transform: scale(0.96) translateY(20px);
+    filter: blur(12px);
+  }
+  60% {
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: blur(0);
+  }
+}
+
+/* FLOATING HEARTS MORE LIFE */
+.particles span {
+  animation-duration: 6s !important;
+  text-shadow: 0 0 10px rgba(255,192,203,.4);
+}
+
+/* BALLOON GLOW PULSE */
+.balloon {
+  filter: drop-shadow(0 0 10px rgba(255, 120, 200, 0.25));
+}
+
+/* CAKE INTERACTION MAGIC */
+.cake:hover {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 25px rgba(236,72,153,.25));
+}
+
+/* candle flick stronger */
+.flame-inner {
+  animation: flicker 0.9s ease-in-out infinite;
+}
+
+/* TAP SCREEN PULSE ENHANCE */
+.tap-card {
+  animation: floatCard 3s ease-in-out infinite;
+}
+
+@keyframes floatCard {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* TEXT SOFT BREATH EFFECT */
+.title, .glow {
+  animation: breathe 4s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%,100% { letter-spacing: 0px; }
+  50% { letter-spacing: 0.5px; }
+}
