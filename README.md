@@ -1,4 +1,4 @@
-# 🎉 Birthday Wishing Website – Akash Ahmad Special
+# 🎉 Birthday Wishing Website
 
 A modern, interactive, fullscreen birthday surprise website created for **Akash Ahmad (20th Birthday)**.
 
