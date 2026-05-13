@@ -1,48 +1,54 @@
-# 🎉 Birthday Wishing Website – Akash Ahmad Special
+# >>> INITIALIZING PROJECT SYSTEM...
 
-A modern, emotional, fullscreen birthday surprise website made for **Akash Ahmad (20th Birthday)**.  
-Designed as a cinematic 2025–2026 style interactive experience with soft animations, music, and friendship memories.
+```bash
+$ boot sequence started...
+$ loading: Birthday Wishing Website
+$ target: Akash Ahmad (20)
+$ mode: EMOTIONAL SURPRISE SYSTEM
+$ status: ONLINE
 
----
+✔ UI ENGINE LOADED
+✔ SCENE CONTROLLER ACTIVE
+✔ ANIMATION CORE RUNNING
+✔ MUSIC SYSTEM READY
+✔ INTERACTION MODULE STABLE
 
-## 💖 Live Demo
-👉 https://dev-xumair.github.io/Birthday_wishing-/
+project: birthday-wishing-website
+type: fullscreen emotional experience
+structure: scene based NO SCROLL
+stack: HTML CSS JS vanilla
+style: cinematic midnight glow
 
----
+scene_engine ACTIVE
+floating_particles ENABLED hearts balloons stars
+confetti_system ENABLED
+music_autoplay ENABLED fallback supported
+button_ai_behavior ENABLED NO BUTTON STOPS
+memory_flow ACTIVE
 
-## ✨ Features
+YES_BUTTON -> next scene + celebration + memory unlock
+NO_BUTTON -> moves + shrinks + changes text loop
 
-- 🎬 Fullscreen scene-based experience (NO scrolling)
-- 🎈 Animated birthday atmosphere (hearts, balloons, particles)
-- 🎂 Emotional birthday opening with VIP celebration feel
-- 🎵 Auto-playing background music (with fallback click support)
-- 😂 Interactive “Yes / No” buttons (fun dodging NO interaction)
-- 💬 Friendship memory scenes with smooth transitions
-- 🌙 Soft midnight + pink/purple glowing aesthetic
-- 📱 Fully responsive mobile-friendly design
-- ⚡ Lightweight vanilla HTML/CSS/JS (no frameworks)
+friendship_duration 2y 5m 13d+
+emotion_level ██████████████ EXTREME
+nostalgia_index █████████████ REAL
+vibe midnight cinematic emotional build
 
----
+background dark purple pink glow animated
+particles hearts stars balloons floating
+effects fade blur glow cinematic transitions
 
-## 🧠 Concept
+audio file assets/birthday-music.mp3 loop cinematic emotional track
+autoplay allowed fallback click supported
 
-This project is built as a **personal emotional surprise website**.
+WARNING NOT A TEMPLATE PERSONAL PROJECT HIGH EMOTION VALUE
 
-It represents:
-- 2+ years friendship journey
-- Emotional memories
-- Late-night vibe creation
-- A modern digital birthday gift experience
+FINAL MESSAGE
+"You will always be my best friend."
+"No matter where life takes us..."
+"You’ll always matter."
 
----
+BUILD COMPLETE DEPLOY LIVE VIBE VIP ACTIVE
 
-## 🛠️ Tech Stack
-
-- HTML5
-- CSS3 (Animations + Gradients)
-- JavaScript (DOM + Interactions)
-- GitHub Pages (Deployment)
-
----
-
-## Give it a star If you Like
+system.shutdown(0)
+```
