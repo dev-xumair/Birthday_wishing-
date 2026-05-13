@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>For Akash — a small surprise</title>
+<meta name="description" content="A little late-night birthday surprise for Akash Ahmad." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Layered ambient background -->
+<div class="bg"></div>
+<div class="bg-glow"></div>
+<div class="lights" id="lights"></div>
+<div class="balloons" id="balloons"></div>
+<div class="particles" id="particles"></div>
+<canvas id="confetti"></canvas>
+
+<!-- Audio start overlay (mobile autoplay fallback) -->
+<div class="tap-start" id="tapStart">
+  <div class="tap-card">
+    <div class="tap-emoji">🎂</div>
+    <p>tap to begin the surprise</p>
+    <span class="tap-hint">made quietly, for you</span>
+  </div>
+</div>
+
+<audio id="bgMusic" loop preload="auto">
+  <source src="assets/birthday-music.mp3" type="audio/mpeg" />
+</audio>
+
+<!-- SCENE 1 — INTRO -->
+<section class="scene active" data-scene="1">
+  <div class="content">
+    <p class="kicker">a small surprise · 11 / 13</p>
+    <h1 class="title">Happy Birthday,<br/><span class="name">Akash Ahmad</span></h1>
+
+    <!-- Cake -->
+    <div class="cake" id="cake" aria-label="birthday cake">
+      <div class="cake-shadow"></div>
+      <div class="cake-plate"></div>
+      <div class="cake-tier base">
+        <div class="frosting"></div>
+      </div>
+      <div class="cake-tier mid">
+        <div class="frosting"></div>
+      </div>
+      <div class="cake-tier top">
+        <div class="frosting"></div>
+      </div>
+      <div class="cherry"></div>
+      <div class="candle">
+        <div class="candle-stick"></div>
+        <div class="flame" id="flame">
+          <div class="flame-inner"></div>
+          <div class="flame-glow"></div>
+        </div>
+      </div>
+    </div>
+    <p class="cake-hint" id="cakeHint">tap the candle to make a wish ✨</p>
+
+    <p class="sub">you turned <b>20</b> today</p>
+    <p class="duration">2 years, 5 months, 13 days of putting up with me.</p>
+
+    <div class="ask">
+      <p class="ask-q">do you want to continue?</p>
+      <div class="ask-btns">
+        <button class="btn yes" id="yesBtn">yes ✨</button>
+        <button class="btn no" id="noBtn">no</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCENE 2 — MEMORIES -->
+<section class="scene" data-scene="2">
+  <div class="content memories">
+    <p class="kicker">things i think about</p>
+    <ul class="mem-list" id="memList">
+      <li>those 3am talks about absolute nonsense</li>
+      <li>you carrying me in ranked when i clearly don't deserve it</li>
+      <li>dumb voice notes instead of texting like normal people</li>
+      <li>you actually showing up when things got heavy</li>
+      <li>stupid jokes that somehow never get old</li>
+      <li>knowing i can text you anything, anytime</li>
+    </ul>
+    <button class="next" id="nextBtn" aria-label="next">next →</button>
+  </div>
+</section>
+
+<!-- SCENE 3 — FINAL -->
+<section class="scene" data-scene="3">
+  <div class="content final">
+    <p class="message" id="finalMsg">
+      i'm not great at this kind of thing, so i'll just say it plainly —
+      thank you for being around. for the loyalty, the patience, the late
+      nights, the random check-ins. you've made these last couple of years
+      feel lighter than they had any right to be.
+      <br/><br/>
+      <b>Happy 20th Birthday, Akash Ahmad.</b>
+    </p>
+
+    <h2 class="glow" id="glowLine">You will always be my best friend.</h2>
+
+    <p class="outro">
+      no matter where life takes us…<br/>
+      you'll always stay important to me.
+    </p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
